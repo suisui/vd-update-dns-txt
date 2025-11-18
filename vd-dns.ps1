@@ -1,5 +1,5 @@
 param(
-    [string]$config,
+    [string]$configfile,
     [string]$domain,
     [string]$record_name,
     [string]$token,
@@ -14,11 +14,12 @@ $projectRoot = Split-Path $commandPath -Parent
 . "$projectRoot\.venv\Scripts\Activate.ps1"
 
 # Python スクリプトのパス
-$script = Join-Path $projectRoot "vd-update-dns-txt.py"
+#$script = Join-Path $projectRoot "vd-update-dns-txt.py"
+$script = "vd-update-dns-txt.py"
 
 # 引数組み立て
 $argv = @(
-    "--config", $config
+    "--config", $configfile
     "--domain", $domain
     "--record-name", $record_name
     "--token", $token

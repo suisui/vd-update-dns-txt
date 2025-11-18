@@ -3,9 +3,9 @@ wacs.exe `
   --host "example.com" `
   --validationmode dns-01 `
   --validation script `
-  --dnscreatescript "vd-dns.ps1" `
+  --dnscreatescript ".\vd-dns.ps1" `
   --dnscreatescriptarguments `
-    "--config app-config.ini --domain {ZoneName} --record-name {RecordName} --token {Token}" `
+    " ""app-config.ini"" ""{ZoneName}"" ""{RecordName}"" ""{Token}"" " `
   --store pemfiles `
   --pemfilespath .\certs `
   --accepttos `
