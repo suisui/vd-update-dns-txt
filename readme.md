@@ -8,7 +8,7 @@
 ### venv 環境作成
 
 ```
-git clone ...
+git clone https://github.com/suisui/vd-update-dns-txt
 cd vd-update-dns-txt
 python3 -m venv .venv
 python3 -m pip install --upgrade pip
