@@ -271,3 +271,4 @@ $RECYCLE.BIN/
 
 /certs/**
 !/certs/**/.gitkeep
+wacs-call.ps1
